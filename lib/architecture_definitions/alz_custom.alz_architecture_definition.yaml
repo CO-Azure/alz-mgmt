@@ -1,0 +1,78 @@
+name: alz_custom
+management_groups:
+  - id: cabinetoffice-alz
+    display_name: Cabinet Office
+    archetypes:
+      - root_custom
+    exists: false
+    parent_id: null
+
+  - id: cabinetoffice-platform
+    display_name: Platform
+    archetypes:
+      - platform_custom
+    exists: false
+    parent_id: cabinetoffice-alz
+
+  - id: cabinetoffice-landingzones
+    display_name: Landing Zones
+    archetypes:
+      - landing_zones_custom
+    exists: false
+    parent_id: cabinetoffice-alz
+
+  - id: cabinetoffice-corp
+    display_name: Corp
+    archetypes:
+      - corp_custom
+    exists: false
+    parent_id: cabinetoffice-landingzones
+
+  - id: cabinetoffice-online
+    display_name: Online
+    archetypes:
+      - online_custom
+    exists: false
+    parent_id: cabinetoffice-landingzones
+
+  - id: cabinetoffice-sandbox
+    display_name: Sandbox
+    archetypes:
+      - sandbox_custom
+    exists: false
+    parent_id: cabinetoffice-alz
+
+  - id: cabinetoffice-management
+    display_name: Management
+    archetypes:
+      - management_custom
+    exists: false
+    parent_id: cabinetoffice-platform
+
+  - id: cabinetoffice-connectivity
+    display_name: Connectivity
+    archetypes:
+      - connectivity_custom
+    exists: false
+    parent_id: cabinetoffice-platform
+
+  - id: cabinetoffice-identity
+    display_name: Identity
+    archetypes:
+      - identity_custom
+    exists: false
+    parent_id: cabinetoffice-platform
+
+  - id: cabinetoffice-decommissioned
+    display_name: Decommissioned
+    archetypes:
+      - decommissioned_custom
+    exists: false
+    parent_id: cabinetoffice-alz
+
+  - id: cabinetoffice-quarantine
+    display_name: Quarantine
+    archetypes:
+      - quarantine_custom
+    exists: false
+    parent_id: cabinetoffice-alz
