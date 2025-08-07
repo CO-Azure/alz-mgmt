@@ -73,6 +73,6 @@ management_groups:
   - id: cabinetoffice-quarantine
     display_name: Quarantine
     archetypes:
-      - quarantine_custom
+      - quarantine
     exists: false
     parent_id: cabinetoffice-alz

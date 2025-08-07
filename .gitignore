@@ -43,7 +43,7 @@ terraform.rc
 .alzlib
 
 # Ignore ALZ Migration specific files and folders
-tfplan
+*tfplan
 tfplan.json
 resources.json
 issues.json
