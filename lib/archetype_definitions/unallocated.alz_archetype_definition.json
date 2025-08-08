@@ -5,6 +5,8 @@
         "Enforce-ALZ-Unallocated"
     ],
     "policy_definitions": [],
-    "policy_set_definitions": [],
+    "policy_set_definitions": [
+        "Enforce-ALZ-Unallocated"
+    ],
     "role_definitions": []
 }
