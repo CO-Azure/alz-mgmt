@@ -76,3 +76,10 @@ management_groups:
       - quarantine
     exists: false
     parent_id: cabinetoffice-alz
+
+  - id: cabinetoffice-unallocated
+    display_name: Unallocated
+    archetypes:
+      - unallocated
+    exists: false
+    parent_id: cabinetoffice-alz

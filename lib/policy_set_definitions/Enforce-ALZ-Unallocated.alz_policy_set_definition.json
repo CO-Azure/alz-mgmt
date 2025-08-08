@@ -1,0 +1,42 @@
+{
+    "name": "Enforce-ALZ-Unallocated",
+    "properties": {
+        "description": "Enforce policies in the Unallocated Landing Zone.",
+        "displayName": "Enforce policies in the Unallocated Landing Zone",
+        "metadata": {
+            "alzCloudEnvironments": [
+                "AzureCloud",
+                "AzureChinaCloud",
+                "AzureUSGovernment"
+            ],
+            "category": "Unallocated",
+            "source": "https://github.com/Azure/Enterprise-Scale/",
+            "version": "1.1.0"
+        },
+        "parameters": {
+            "listOfResourceTypesAllowed": {
+                "defaultValue": [],
+                "metadata": {
+                    "description": "Allowed resource types in the Unallocated landing zone, default is none.",
+                    "displayName": "Allowed resource types in the Unallocated landing zone",
+                    "strongType": "resourceTypes"
+                },
+                "type": "Array"
+            }
+        },
+        "policyDefinitions": [
+            {
+                "groupNames": [],
+                "parameters": {
+                    "listOfResourceTypesAllowed": {
+                        "value": "[parameters('listOfResourceTypesAllowed')]"
+                    }
+                },
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a08ec900-254a-4555-9bf5-e42af04b5c5c",
+                "policyDefinitionReferenceId": "DecomDenyResources"
+            }
+        ],
+        "policyType": "Custom"
+    },
+    "type": "Microsoft.Authorization/policySetDefinitions"
+}
